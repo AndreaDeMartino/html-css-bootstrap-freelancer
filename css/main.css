@@ -1,0 +1,14 @@
+/* GENERAL RULES */
+
+/* HEADER */
+header .navbar-default{
+  background-color: #2C3E50;
+}
+
+header .navbar-default .navbar-brand{
+  color: white;
+}
+
+header .navbar-default .navbar-nav>li>a {
+  color:white;
+}
