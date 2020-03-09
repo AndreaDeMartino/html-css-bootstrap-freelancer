@@ -1,14 +1,78 @@
 /* GENERAL RULES */
 
-/* HEADER */
-header .navbar-default{
-  background-color: #2C3E50;
+
+/* UTILITY */
+.relative {
+  position: relative;
+  height: 50px;
 }
 
-header .navbar-default .navbar-brand{
+.maxwidth {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header .navbar-default {
+  background-color: #2C3E50;
+  border: none;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+header .navbar-default .navbar-brand {
   color: white;
+  font-size: 20px;
 }
 
 header .navbar-default .navbar-nav>li>a {
   color:white;
+  font-size: 18px;
+}
+
+/* JUMBOTRON */
+#jumbotron {
+  height: 600px;
+  background-color: #1CBC9C;
+  color: white;
+}
+
+#jumbotron img {
+  height: 250px;
+}
+
+#jumbotron .line:after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translate(-50%,-50%);
+  background: white;
+}
+
+#jumbotron,
+#portfolio .row {
+  font-size: 36px;
+}
+
+/* PORTFOLIO */
+#portfolio img {
+  margin-bottom: 30px;
+}
+
+#portfolio i {
+  margin-bottom: 50px;
+}
+
+#portfolio .line:after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translate(-50%,-50%);
+  background: black;
 }
