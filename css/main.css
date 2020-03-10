@@ -1,15 +1,55 @@
-/* GENERAL RULES */
-
-
 /* UTILITY */
 .relative {
   position: relative;
-  height: 50px;
 }
 
 .maxwidth {
   max-width: 1000px;
   margin: 0 auto;
+  font-size: 36px;
+}
+
+.w30 {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.star-white {
+  font-size: 36px;
+  padding: 0 30px;
+  color: white;
+  background-color: #1CBC9C;
+  z-index: 1;
+}
+
+.line-white {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 400px;
+  transform: translateX(-50%);
+  border: 2px solid white;
+}
+
+.star-black {
+  font-size: 36px;
+  padding: 0 30px;
+  color: black;
+  background-color: white;
+  z-index: 1;
+}
+
+.line-black {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 400px;
+  transform: translateX(-50%);
+  border: 2px solid black;
+}
+
+.mgtop{
+  margin-top: 30px;
 }
 
 /* HEADER */
@@ -26,13 +66,22 @@ header .navbar-default .navbar-brand {
 }
 
 header .navbar-default .navbar-nav>li>a {
-  color:white;
-  font-size: 18px;
+  color: white;
+}
+
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li>a:hover{
+  color: #1CBC9C;
+}
+
+header .navbar-default .navbar-brand:focus,
+header .navbar-default .navbar-brand:hover {
+  color: #1CBC9C;
 }
 
 /* JUMBOTRON */
 #jumbotron {
-  height: 600px;
+  height: 500px;
   background-color: #1CBC9C;
   color: white;
 }
@@ -41,38 +90,110 @@ header .navbar-default .navbar-nav>li>a {
   height: 250px;
 }
 
-#jumbotron .line:after {
-  content: '';
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  width: 100%;
-  height: 3px;
-  transform: translate(-50%,-50%);
-  background: white;
-}
-
-#jumbotron,
-#portfolio .row {
-  font-size: 36px;
-}
-
 /* PORTFOLIO */
 #portfolio img {
   margin-bottom: 30px;
 }
 
-#portfolio i {
+#portfolio .layover{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+#portfolio .layover i{
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  color: white;
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  /* transform: translate(-50%, -50%); */
+}
+
+#portfolio .layover:hover{
+  opacity: 1;
+}
+
+/* ABOUT */
+#about {
+  background-color: #1CBC9C;
+  color: white;
+}
+
+#about h1 {
+  padding-top: 80px;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+#about .btn {
+  background-color: #1CBC9C;
+  border-color: white;
+  color: white;
   margin-bottom: 50px;
 }
 
-#portfolio .line:after {
-  content: '';
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  width: 100%;
-  height: 3px;
-  transform: translate(-50%,-50%);
-  background: black;
+/* CONTACT ME */
+#contactme {
+  height: 500px;
+}
+
+#contactme .form-control {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+#contactme .btn {
+  background-color: #1CBC9C;
+  border-color: white;
+  color: white;
+}
+
+#contactme input::placeholder,
+#contactme textarea::placeholder {
+  color: black;
+}
+
+/* FOOTER */
+#info {
+  background-color: #3A546D;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#info h4 {
+  margin-bottom: 15px;
+}
+
+#info a{
+  color: #1CBC9C;
+}
+
+#info i {
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+}
+
+#copyright {
+  background-color: #2D3F4F;
+  color: white;
+}
+
+#copyright p {
+  padding: 30px 0;
+  margin-bottom: 0;
 }

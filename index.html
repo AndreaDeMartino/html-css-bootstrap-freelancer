@@ -9,30 +9,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <title>BOOTSRAP</title>
+    <title>BOOTSTRAP</title>
   </head>
 
   <body>
 
-
-
   <header>
-    <!-- NAV BAR CON APPUNTI-->
+    <!-- NAV BAR -->
     <nav class="navbar navbar-default">
       <div class="container">
-        <!-- COMPRESSO -->
         <div class="navbar-header">
-          <!-- BOTTONE HAMBURGER -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- LOGO -->
           <a class="navbar-brand" href="#">START BOOTSTRAP</a>
         </div>
-        <!-- NON COMPRESSO -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">PORTFOLIO</a></li>
@@ -43,67 +37,92 @@
       </div>
     </nav>
 
-    <!-- JUMBOTRON -->
+    <!-- SECTION JUMBOTRON -->
     <section>
       <div id="jumbotron" class="text-center">
         <img class= "img-responsive center-block" src="assets/avatar.svg" alt="">
         <h1>START BOOTSTRAP</h1>
-        <div class=".container-fluid">
-          <div class="row maxwidth">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 text-right relative">
-              <div class="line"></div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left relative">
-              <div class="line"></div>
-            </div>
+        <!-- BEGIN STAR -->
+        <div class="star-container w30">
+          <div class="star-line relative">
+            <i class="star-white relative fas fa-star"></i>
+            <hr class="line-white">
           </div>
         </div>
+        <!-- END STAR -->
         <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
       </div>
     </section>
   </header>
 
   <main>
-    <!-- PORTFOLIO -->
+    <!-- SECTION PORTFOLIO -->
     <section>
       <div id= "portfolio" class="text-center">
-        <h1>PORTFOLIO</h1>
-        <div class=".container-fluid">
-          <div class="row maxwidth">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 text-right relative">
-              <div class="line"></div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left relative">
-              <div class="line"></div>
-            </div>
+        <h1 class="mgtop">PORTFOLIO</h1>
+        <!-- BEGIN STAR -->
+        <div class="star-container w30">
+          <div class="star-line relative">
+            <i class="star-black relative fas fa-star"></i>
+            <hr class="line-black">
           </div>
         </div>
-        <div class="container">
+        <!-- END STAR -->
+        <div class="container mgtop">
           <div class="row">
 
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/cabin.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/cabin.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/cake.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/cake.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/circus.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/circus.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/game.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/game.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/safe.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/safe.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="assets/submarine.png" alt="">
+              <div class="wrapper relative">
+                <img class="img-responsive" src="assets/submarine.png" alt="">
+                <div class="layover">
+                <i class="fas fa-plus"></i>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -111,33 +130,115 @@
       </div>
     </section>
 
+    <!-- SECTION ABOUT -->
+    <section>
+      <div id="about" class="text-center">
+        <h1>ABOUT</h1>
+        <!-- BEGIN STAR -->
+        <div class="star-container w30">
+          <div class="star-line relative">
+            <i class="star-white relative fas fa-star"></i>
+            <hr class="line-white">
+          </div>
+        </div>
+        <!-- END STAR -->
+        <div class="container mgtop">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+              <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+              <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+          </div>
+        </div>
+        <div class="button text-center">
+          <button type="button" class= "btn mgtop" name="button"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
+    <!-- SECTION CONTACT ME -->
+    <section>
+      <div id="contactme" class="text-center">
+        <h1 class="mgtop">CONTACT ME</h1>
+        <!-- BEGIN STAR -->
+        <div class="star-container w30">
+          <div class="star-line relative">
+            <i class="star-black relative fas fa-star"></i>
+            <hr class="line-black">
+          </div>
+        </div>
+        <!-- END STAR -->
+        <div class="container mgtop">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                </div>
+              </form>
+              <div class="button text-left">
+                <button type="button" class= "btn" name="button">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section>
   </main>
 
+  <footer>
+    <!-- SECTION INFO -->
+    <section>
+      <div id="info">
+        <div class="container text-center">
+          <div class="row">
 
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mgtop">
+              <h4>LOCATION</h4>
+              <p>2215 John Daniel Drive Clark, MO 54243</p>
+            </div>
 
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mgtop">
+              <h4>AROUND THE WEB</h4>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></li></a>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></li></a>
+                <li><a href="#"><i class="fab fa-twitter"></i></li></a>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></li></a>
+              </ul>
+            </div>
 
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mgtop">
+              <h4>ABOUT FREELANCER</h4>
+              <p>Freelance is a free to use open source Bootstrap theme created by <a href="#">Start Bootstrap.</a></p>
+            </div>
 
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
+    <!-- SECTION COPYRIGHT -->
+    <section>
+      <div id="copyright" class="text-center">
+          <p>Copyright Your website 2019</p>
+      </div>
+    </section>
+  </footer>
 
 
   <!-- LIBRERIE JS -->
-
   <!-- JQUERY -->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
